@@ -8,6 +8,10 @@
 
 # AttentionGAN-v2 for Unpaired Image-to-Image Translation
 
+## Changes made in this fork
+
+* Instead of using scipy library to resize images at line [41](https://github.com/Ha0Tang/AttentionGAN/blob/9da35ad28f0d1be81a0477ed6cc76d6882bf72c6/util/visualizer.py#L41) and [43](https://github.com/Ha0Tang/AttentionGAN/blob/9da35ad28f0d1be81a0477ed6cc76d6882bf72c6/util/visualizer.py#L43) used cv2 library.
+
 ## AttentionGAN-v2 Framework
 The proposed generator learns both foreground and background attentions. It uses the foreground attention to select from the generated output for the foreground regions, while uses the background attention to maintain the background information from the input image. Please refer to our papers for more details.
 
